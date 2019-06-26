@@ -1,0 +1,143 @@
+@font-face{
+    src: url(Comfortaa.ttf);
+    font-family: comfortaa;
+}
+@font-face{
+    src: url(PoorStory-Regular.ttf);
+    font-family: poorstory;
+}
+@font-face{
+    src: url(LoveYaLikeASister.ttf);
+    font-family: sister;
+}
+body{
+    background-color: #eee;
+    margin: 0;
+    font-family: 'comfortaa', sans-serif;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    color: #101010;
+}
+.parts{
+    height: 120vh;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+#home{
+    color: #eee;
+    background-size: 50%;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: radial-gradient(circle,
+       transparent 0%, rgba(10, 10, 10, 0.9) 100%
+        ),
+    url(img/1.png);
+}
+.black-sheet{
+    background-color: #101010;
+    height: inherit;
+    width: 100%;
+    display: block;
+    position: absolute;
+    opacity: 0;
+}
+#home h1{
+    margin: 0;
+    font-size: 150px;
+    font-family: 'sister', sans-serif;
+    padding-top: 150px; 
+    text-align: center;
+    letter-spacing: 20px;
+    font-weight: bolder;
+}
+#home a{
+    height: 64px;
+    width: 64px;
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.1s;
+    display: block;
+    position: absolute;
+    bottom: 0;    
+    right: 0;
+}
+#home a:hover{
+    transform: scale(1.05, 1.05);
+}
+#home a:first-child{
+    background-image: url(img/instagram.png);
+    right: 70px;    
+}
+#home a:first-child{
+    background-image: url(img/instagram.png);    
+}
+#home a:first-child:hover{
+    background-image: url(img/instagram1.png);    
+}
+#home a:last-child{
+    background-image: url(img/github-logo2.png);    
+}
+#home a:last-child:hover{
+    background-image: url(img/github-logo1.png);    
+}
+
+#projects{
+    padding: 30px;
+}
+#projects h1{
+    font-size: 160px;
+}
+#projects ul{
+    list-style-type: none;
+    font-size: 80px;
+}
+#projects li{
+    display: inline-block;
+    border: 3px solid #101010;
+    margin: 30px;
+    width: auto;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+#projects li:hover{
+    transform: scale(1.2, 1.2);
+    background-color: #101010;
+    color: #eee;
+    border: 3px solid #eee;
+    padding: 15px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+@media only screen and (max-width: 700px){
+    #home{
+        background-size: 100%;
+    }
+    #home h1{
+        font-size: 60px;
+        letter-spacing: 3px;
+    }
+    #home a{
+        margin: 0;
+        transform: scale(0.7, 0.7);
+        margin: 0;
+    }
+    #home a:hover{
+        transform: scale(0.7, 0.7);
+    }
+    #projects{
+        padding: 10px;
+    }
+    #projects h1{
+        font-size: 60px;
+    }
+    #projects li{
+        margin: 10px;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 40px;
+    }
+}
